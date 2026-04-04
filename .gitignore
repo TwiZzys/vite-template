@@ -1,0 +1,88 @@
+# --- ЗАЛЕЖНОСТІ ТА ЗБІРКА (Dependencies & Build) ---
+node_modules/
+dist/
+dist-ssr/
+build/
+out/
+.cache/
+.parcel-cache/
+
+# --- ШРИФТИ (Fonts Automation) ---
+# Ігноруємо результати (веб-формати)
+src/fonts/*.woff
+src/fonts/*.woff2
+# Ігноруємо автогенерований файл підключення
+src/scss/_fonts.scss
+
+# ДОЗВОЛЯЄМО вхідні оригінали (джерело)
+!src/fonts/src/
+!src/fonts/src/**/*
+
+# --- ЗОБРАЖЕННЯ ТА СПРАЙТИ (Images Automation) ---
+# Ігноруємо ВСЕ у папці виходу src/images/
+src/images/**/*
+
+# ДОЗВОЛЯЄМО вхідні дані всередині src/images
+!src/images/**/src/
+!src/images/**/src/**/*
+!src/images/**/sprite-src/
+!src/images/**/sprite-src/**/*
+
+# Ігноруємо готовий спрайт
+src/images/sprite.svg
+
+#ігноруємо кеш спрайту
+.svg-sprite-cache.json
+
+# Дозволяємо відео
+!src/video/
+!src/video/**/*
+!public/video/
+!public/video/**/*
+
+
+# --- МОДУЛІ (Source of Truth) ---
+# Тут нічого не ігноруємо — все, що ти кладеш у модулі вручну, йде в репо
+!src/modules/**/*
+
+# --- СЕКРЕТНІ ДАНІ (Sensitive info) ---
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+!.env.example
+
+# --- ЛОГИ (Logs) ---
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# --- НАЛАШТУВАННЯ IDE (Editor directories) ---
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.history/
+
+# --- СИСТЕМНІ ФАЙЛИ (System files) ---
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+*.bak
+*.tmp
+.fuse_hidden*
+
+# --- ТЕСТИ ТА VITE ---
+coverage/
+.nyc_output/
+*.tsbuildinfo
+vite.config.js.timestamp-*
