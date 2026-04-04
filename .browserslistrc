@@ -1,0 +1,14 @@
+# Last 20 versions of major browsers
+last 20 Chrome versions
+last 20 Firefox versions
+last 20 Edge versions
+last 20 Safari versions
+last 20 iOS versions
+last 20 Opera versions
+# Include IE 11 just in case (optional)
+IE >=9
+# Usage statistics (can help Autoprefixer)
+> 0.5%
+not dead
+
+chrome < 49
