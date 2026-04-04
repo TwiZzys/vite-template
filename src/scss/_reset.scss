@@ -1,0 +1,66 @@
+/* ===== Reset ===== */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
+}
+
+/* ===== Media ===== */
+img,
+svg,
+video,
+iframe {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== Media container ===== */
+picture,
+video,
+iframe {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* ===== Media fill container ===== */
+picture>img,
+video,
+iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* дефолт */
+}
